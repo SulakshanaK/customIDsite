@@ -345,3 +345,10 @@ a:focus {
     color: #0072dd !important;
     text-decoration: underline;
 }
+.row {
+    background-color: #3e4549 !important;
+}
+
+.well,.alert-warning{
+background-color: #3e4549 !important;
+}
