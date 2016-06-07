@@ -44,20 +44,20 @@ p {
     font-size: 17px;
     background: -webkit-linear-gradient(#4c9ce7 50%, #2dbd00 50%);
     background: linear-gradient(#4c9ce7 50%, #2dbd00 50%);
-    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#4c9ce7, endColorstr=#4c9ce7);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#4c9ce7, endColorstr=#4c9ce7)"
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2dbd00, endColorstr=#0072dd);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#2dbd00, endColorstr=#0072dd)"
 }
 .btn-sp-green:focus,
 .btn-sp-green:hover {
     color: #fff;
-    background: -webkit-linear-gradient(#0072dd 50%, #2ec700 50%);
-    background: linear-gradient(#0072dd 50%, #2ec700 50%);
-    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0072dd, endColorstr=#0072dd);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0072dd, endColorstr=#0072dd)"
+    //background: -webkit-linear-gradient( 50%, #2ec700 50%);
+    background: #0072dd;
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2ec700, endColorstr=#43cd1a);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#2ec700, endColorstr=#43cd1a)"
 }
 .btn-saml {
-    background: -webkit-linear-gradient(#458ac5 50%, #3b7db5 50%);
-    background: linear-gradient(#458ac5 50%, #3b7db5 50%);
+  //  background: -webkit-linear-gradient(#458ac5 50%, #3b7db5 50%);
+    background: #458ac5
     filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#3b7db5, endColorstr=#458ac5);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#3b7db5, endColorstr=#458ac5)"
 }
