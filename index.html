@@ -177,9 +177,9 @@
         <div class="box row">
           <div class="col-sm-12">
             <div class="header">
-              <span ng-show="!sent && !retry">Password Reset</span>
-              <span ng-show="retry">Reset link has expired</span>
-              <span ng-show="sent">Please check your mail. <a class="to-login" href="#/">Back to Log In</a> </span>
+              <span ng-show="!sent && !retry">Password Reset <a id="back_to_login" class="to-login" href="#/">Back to Log In</a></span>
+              <span ng-show="retry">Reset link has expired <a id="back_to_login" class="to-login" href="#/">Back to Log In</a></span>
+              <span ng-show="sent">Please check your mail. <a id="back_to_login" class="to-login" href="#/">Back to Log In</a> </span>
 
             </div>
             <div class="wd-sent" ng-show="sent">
@@ -366,7 +366,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container" ng-controller="ErrorCtrl" ng-cloak>
+    <div class="container" style="margin-bottom:100px;" ng-controller="ErrorCtrl" ng-cloak>
 
       <div ng-show="inError" ng-include="'views/error.html'"></div>
       <div ng-hide="inError" ng-view="">

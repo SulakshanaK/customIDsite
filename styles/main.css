@@ -45,7 +45,7 @@ p {
     padding: 0 40px;
     color: #fff;
     font-size: 17px;
-    //background: -webkit-linear-gradient(#4c9ce7 50%, #2dbd00 50%);
+//background: -webkit-linear-gradient(#4c9ce7 50%, #2dbd00 50%);
     background: #328ee3;
     filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2dbd00, endColorstr=#0072dd);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#2dbd00, endColorstr=#0072dd)"
@@ -53,15 +53,15 @@ p {
 .btn-sp-green:focus,
 .btn-sp-green:hover {
     color: #fff;
-    //background: -webkit-linear-gradient( 50%, #2ec700 50%);
+//background: -webkit-linear-gradient( 50%, #2ec700 50%);
     background: #0072dd;
     filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2ec700, endColorstr=#43cd1a);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#2ec700, endColorstr=#43cd1a)"
 }
 .btn-saml {
-  //  background: -webkit-linear-gradient(#458ac5 50%, #3b7db5 50%);
+//  background: -webkit-linear-gradient(#458ac5 50%, #3b7db5 50%);
     background: #458ac5
-    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#3b7db5, endColorstr=#458ac5);
+filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#3b7db5, endColorstr=#458ac5);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#3b7db5, endColorstr=#458ac5)"
 }
 .btn-saml:focus,
@@ -185,7 +185,7 @@ p {
     float: right;
     padding: 17px 0;
     font-size: 13px;
-	color:#0072dd;
+    color:#0072dd;
 }
 .view form button {
     display: block;
@@ -336,6 +336,9 @@ a {
     color: #fff;
     text-decoration: none;
 }
+#back_to_login{
+    color: #fff;
+}
 a:hover,
 a:focus {
     color: #fff !important;
@@ -353,5 +356,5 @@ a:focus {
 }
 
 .well,.alert-warning{
-background-color: #3e4549 !important;
+    background-color: #3e4549 !important;
 }
