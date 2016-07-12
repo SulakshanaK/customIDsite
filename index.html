@@ -179,7 +179,7 @@
             <div class="header">
               <span ng-show="!sent && !retry">Password Reset </span>
               <span ng-show="retry">Reset link has expired </span>
-              <span ng-show="sent">Please check your mail. <a id="back_to_login" class="to-login" href="#/">Back to Log In</a> </span>
+              <span ng-show="sent">Please check your mail. </span>
 
             </div>
             <div class="wd-sent" ng-show="sent">
@@ -225,6 +225,8 @@
           </div>
         </div>
         <a ng-show="!sent" class="to-login" href="#/" wd-back-to-login>Back to Log In</a>
+        <a ng-show="sent" class="to-login" href="#/" wd-back-to-login>Back to Log In</a>
+
       </div>
     </script>
     <script type="text/ng-template" id="views/reset.html">
