@@ -36,7 +36,7 @@
               <span>Log In</span>
               <span ng-show="canRegister" wd-can-register>
                 <span> or </span>
-                <a href="#register">Create an Account</a>
+                <a id="register_new" href="#register">Create an Account</a>
               </span>
 
             </div>
@@ -173,13 +173,13 @@
       </div>
     </script>
     <script type="text/ng-template" id="views/forgot.html">
-      <div class="view forgot-view" ng-show="ready">
+      <div class="view forgot-view" ng-show="ready" style="margin-bottom:200px ;">
         <div class="box row">
           <div class="col-sm-12">
             <div class="header">
               <span ng-show="!sent && !retry">Password Reset</span>
               <span ng-show="retry">Reset link has expired</span>
-              <span ng-show="sent">Please check your mail.</span>
+              <span ng-show="sent">Please check your mail. <a class="to-login" href="#/">Back to Log In</a> </span>
 
             </div>
             <div class="wd-sent" ng-show="sent">
