@@ -11965,10 +11965,13 @@ if (function(a, b) {
          method: "POST",
          url: d.appHref + "/passwordResetTokens",
          json: c
-        }, b || h.noop)
+        },function(a, b) {
+         console.log("dsfdfsdf");
+         console.log(a);
+         return a ? d(400 === a.status ? new Error(g.errors.INVALID_EMAIL_ADDRESS) : a) : (b || h.noop)
+        } )
        }, b.exports = d
-       console.log(h.noop);
-       console.log(d);
+
       }, {
        "./defer-callback": 2,
        "./idsite-request-executor": 3,
@@ -12032,7 +12035,9 @@ if (function(a, b) {
          MALFORMED_JWT_CLAIMS: "The JWT claims section is malfomed and could not be decoded as JSON.",
          NO_AUTH_TOKEN_HEADER: "HTTP response does not contain Authorization header.",
          INVALID_AUTH_TOKEN_HEADER: "HTTP response has an invalid Authorization header.",
-         INITIAL_JWT_REJECTED: "Your login session is expired."
+         INITIAL_JWT_REJECTED: "Your login session is expired.",
+         INVALID_EMAIL_ADDRESS: "Your email address does not exists."
+
         }
        }
       }, {}],
