@@ -11969,7 +11969,9 @@ if (function(a, b) {
          if (b == undefined){
 
           console.log(b);
-          throw new Error("Invalid Email Address");
+          console.log(d);
+         // throw new Error("Invalid Email Address");
+          return e(d, [new Error("Invalid Email Address")]);
 
          }
 
