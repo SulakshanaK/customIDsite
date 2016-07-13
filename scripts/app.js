@@ -164,8 +164,9 @@
   }).length;
   if (!(c > 0)) {
    var e = a.fields.password.value;
+   console.log(a.submitting);
    a.submitting = !0, b.setNewPassword(d, e, function(b) {
-    a.submitting = !1, a.sent != 0, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : a.status = "success"
+    a.submitting = !1, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : a.status = "success"
    })
   }
  }
