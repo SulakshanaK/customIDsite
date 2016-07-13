@@ -11966,10 +11966,10 @@ if (function(a, b) {
          url: d.appHref + "/passwordResetTokens",
          json: c
         },function(a, b) {
-         console.log(a);
-         console.log(b);
-         console.log(h.noop);
-         if (b == undefined) throw new Error("Invalid Email Address");
+         if (b == undefined){
+          console.log(b);
+              throw new Error("Invalid Email Address");
+        }
          else b || h.noop;
         } )
        }, b.exports = d
