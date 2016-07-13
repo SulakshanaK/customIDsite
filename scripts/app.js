@@ -158,13 +158,15 @@
    b ? 404 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b) : (a.status = "verified", d = e)
   })
  }), a.submit = function() {
+  console.error(a.submitting);
+  console.log(a.submitting);
   var c = Object.keys(a.fields).filter(function(b) {
    var c = a.fields[b];
    return c.validate()
   }).length;
   if (!(c > 0)) {
    var e = a.fields.password.value;
-   console.log(a.submitting);
+   console.error(a.submitting);
    a.submitting = !0, b.setNewPassword(d, e, function(b) {
     a.submitting = !1, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : a.status = "success"
    })
