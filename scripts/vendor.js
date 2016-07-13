@@ -11968,7 +11968,7 @@ if (function(a, b) {
         },function(a, b) {
          console.log("dsfdfsdf");
          console.log(a);
-         return a ? d(400 === a.status ? new Error(g.errors.INVALID_EMAIL_ADDRESS) : a) : (b || h.noop)
+         return a ? (400 === a.status ? new Error(g.errors.INVALID_EMAIL_ADDRESS) : a) : (b || h.noop)
         } )
        }, b.exports = d
 
