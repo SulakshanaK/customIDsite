@@ -11965,7 +11965,7 @@ if (function(a, b) {
          method: "POST",
          url: d.appHref + "/passwordResetTokens",
          json: c
-        }, d.prototype.verifyPasswordResetToken = function(a) {
+        }, function(a) {
          var b = this;
          if (b == undefined){
 
