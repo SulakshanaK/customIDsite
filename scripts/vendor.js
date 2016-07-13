@@ -11960,8 +11960,7 @@ if (function(a, b) {
         else {
          if ("object" != typeof a) throw new Error("sendPasswordResetEmail must be called with an email/username as the first argument, or an options object");
          c = a
-         if (!a || !a.href) throw new Error("invalid passwordVerificationTokenResource");
-
+        console.log(d.appHref + "/passwordResetTokens");
         }
         d.requestExecutor.execute({
          method: "POST",
