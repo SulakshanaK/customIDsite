@@ -158,24 +158,23 @@
    b ? 404 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b) : (a.status = "verified", d = e)
   })
  }), a.submit = function() {
-  console.error(a.submitting);
-  console.log(a.submitting);
   var c = Object.keys(a.fields).filter(function(b) {
    var c = a.fields[b];
    return c.validate()
   }).length;
   if (!(c > 0)) {
    var e = a.fields.password.value;
-   console.error(a.submitting);
    a.submitting = !0, b.setNewPassword(d, e, function(b) {
-    a.submitting = !1, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : a.status = "success"
+    b ? 400 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b) : (a.status = "verified", d = e);
+
+    a.submitting = !1, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : (a.sent=!0,a.status = "success")
    })
   }
  }
 }]), angular.module("stormpathIdpApp").controller("VerifyCtrl", ["$scope", "Stormpath", function(a, b) {
  a.status = "loading", b.init.then(function() {
   b.verifyEmailToken(function(b) {
-   b ? (a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)) : a.status = "verified"
+   b ? (a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)) : (a.sent=!0, a.status = "verified")
   })
  })
 }]), angular.module("stormpathIdpApp").controller("ErrorCtrl", ["$scope", "Stormpath", function(a, b) {
