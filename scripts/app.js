@@ -165,7 +165,7 @@
   if (!(c > 0)) {
    var e = a.fields.password.value;
    a.submitting = !0, b.setNewPassword(d, e, function(b) {
-    b ? 400 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b) : (a.status = "verified", d = e);
+  //  b ? 400 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b) : (a.status = "verified", d = e);
 
     a.submitting = !1, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : (a.sent=!0,a.status = "success")
    })
