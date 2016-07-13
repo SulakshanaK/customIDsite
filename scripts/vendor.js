@@ -11965,13 +11965,9 @@ if (function(a, b) {
          method: "POST",
          url: d.appHref + "/passwordResetTokens",
          json: c
-        },function(a, b) {
-         if (b == undefined){
-          console.log(b);
-              throw new Error("Invalid Email Address");
-        }
-         else b || h.noop;
-        } )
+        },
+          b || h.noop
+         )
        }, b.exports = d
 
       }, {
