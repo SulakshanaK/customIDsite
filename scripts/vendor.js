@@ -11960,7 +11960,6 @@ if (function(a, b) {
         else {
          if ("object" != typeof a) throw new Error("sendPasswordResetEmail must be called with an email/username as the first argument, or an options object");
          c = a
-        console.log(d.appHref + "/passwordResetTokens");
         }
         d.requestExecutor.execute({
          method: "POST",
@@ -11968,6 +11967,8 @@ if (function(a, b) {
          json: c
         }, b || h.noop)
        }, b.exports = d
+       console.log(h.noop);
+       console.log(d);
       }, {
        "./defer-callback": 2,
        "./idsite-request-executor": 3,
