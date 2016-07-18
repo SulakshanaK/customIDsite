@@ -71,6 +71,7 @@
   badLogin: !1,
   notFound: !1,
   userMessage: !1,
+  developerMessage: !1,
   unknown: !1,
   organizationNameKeyRequired: !1,
   organizationNameKeyInvalid: !1
@@ -266,7 +267,7 @@
         console.log("400");
        //a.sent = !1, a.fields.email.setError("duplicateUser", !0)
       // a.submitting = !1, a && (400 === a.status ? a.fields.email.setError("duplicateUser", !0) : a.unknownError = String(a.userMessage || a.developerMessage || a))
-       a.submitting = !1,400 === a.status ? a.code && 2016 === a.code ? a.errors.notFound = !0 : a.errors.badLogin = !0 : 404 === a.status ? a.errors.notFound = !0 : a.userMessage || a.message ? a.errors.userMessage = a.userMessage || a.message : a.errors.unknown = !0
+       a.submitting = !1,400 === a.status ? a.code && 2016 === a.code ? a.errors.notFound = !0 : a.errors.badLogin = !0 : 404 === a.status ? a.errors.notFound = !0 : a.developerMessage || a.message ? a.errors.userMessage = a.developerMessage || a.message : a.errors.unknown = !0
 
 
       }
