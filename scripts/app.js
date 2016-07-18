@@ -253,14 +253,17 @@
      console.log(a);
      console.log(b);
      console.log("-----------------");*/
+     console.log(b);
+     console.log(b(a));
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
     }else{
 
 /*     console.log(a);
-     console.log("******************");
-     console.log(b);*/
-     a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
+     console.log("******************");*/
+     console.log(b);
+     console.log(b(a));
+     //a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
    //    a ? 400 === a.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
 
