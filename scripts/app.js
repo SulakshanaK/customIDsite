@@ -245,6 +245,10 @@
   o.sendPasswordResetEmail(a, function(a) {
    d.$apply(function() {
     console.log(a);
+    console.log("******************");
+    console.log(a.serviceProviderCallbackUrl);
+    console.log("******************");
+
     if(a.developerMessage == "The email property value 'sulakshana146@gmail.com' does not match a known resource."){
 
     }else{
