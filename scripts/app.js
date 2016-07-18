@@ -265,9 +265,8 @@
       if(a.status == 400){
         console.log("400");
        //a.sent = !1, a.fields.email.setError("duplicateUser", !0)
-      // a.submitting = !1, a && (400 === a.status ? a.fields.email.setError("duplicateUser", !0) : a.unknownError = String(a.userMessage || a.developerMessage || a))
+       a.sent = !1, a.submitting = !1, a && (400 === a.status ? a.fields.email.setError("unknownError", !0) : a.unknownError = String(a.userMessage || a.developerMessage || a))
        //a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
-       a.sent = !1, a ? 400 === a.status ? a.path("/forgot/retry") : (a.status = "failed", a.error = a.userMessage || a.developerMessage || a) : (a.status = "verified", d = e)
 
       }
     }
