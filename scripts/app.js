@@ -244,18 +244,20 @@
  }, this.sendPasswordResetEmail = function(a, b) {
   o.sendPasswordResetEmail(a, function(a) {
    d.$apply(function() {
-    console.log(a);
-    console.log("******************");
 
-    if(a.serviceProviderCallbackUrl== undefined){
 
-    }else{
+    if(a == null){
 
      console.log("-----------------");
      console.log(a);
      console.log(b);
      console.log("-----------------");
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
+
+    }else{
+
+     console.log(a);
+     console.log("******************");
 
     }
    })
