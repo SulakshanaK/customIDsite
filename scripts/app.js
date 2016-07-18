@@ -152,6 +152,7 @@
    })
   }
   console.log("#################");
+  a.fields.email.setError("duplicateUser", !0)
   console.log(a);
  }
 }]), angular.module("stormpathIdpApp").controller("ResetCtrl", ["$scope", "Stormpath", "$location", function(a, b, c) {
