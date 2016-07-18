@@ -264,7 +264,7 @@
 
       if(a.status == 400){
         console.log("400");
-       a.sent = !1, a.fields.email.setError(a.developerMessage)
+       a.sent = !1, a.fields.email.setError("duplicateUser", !0)
 
       }
     }
