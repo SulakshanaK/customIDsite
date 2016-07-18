@@ -133,6 +133,8 @@
  }), b.init.then(function() {
   a.organizationNameKey = b.getOrganizationNameKey(), a.showOrganizationField = b.client.jwtPayload.sof, a.disableOrganizationField = "" !== a.organizationNameKey, a.ready = !0
  }), a.submit = function() {
+  console.log("#################");
+  console.log(a);
   a.notFound = !1;
   var c = Object.keys(a.fields).filter(function(b) {
    return a.fields[b].validate()
@@ -149,6 +151,8 @@
     a.sent = !0, a.submitting = !1
    })
   }
+  console.log("#################");
+  console.log(a);
  }
 }]), angular.module("stormpathIdpApp").controller("ResetCtrl", ["$scope", "Stormpath", "$location", function(a, b, c) {
  a.status = "loading", a.fields = {};
