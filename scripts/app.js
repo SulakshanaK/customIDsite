@@ -165,9 +165,6 @@
   if (!(c > 0)) {
    var e = a.fields.password.value;
    a.submitting = !0, b.setNewPassword(d, e, function(b) {
-    console.log("@@@@@@@@@@@@@@@@@@@@");
-    console.log(a);
-    console.log("@@@@@@@@@@@@@@@@@@@@");
     a.submitting = !1, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : a.status = "success"
    })
   }
@@ -175,6 +172,9 @@
 }]), angular.module("stormpathIdpApp").controller("VerifyCtrl", ["$scope", "Stormpath", function(a, b) {
  a.status = "loading", b.init.then(function() {
   b.verifyEmailToken(function(b) {
+   console.log("@@@@@@@@@@@@@@@@@@@@");
+   console.log(b);
+   console.log("@@@@@@@@@@@@@@@@@@@@");
    b ? (a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)) : a.status = "verified"
   })
  })
