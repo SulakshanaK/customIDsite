@@ -255,8 +255,8 @@
 
     }else{
       if(a.status == 400){
-       console.log("status : "+a);
-        a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
+       console.log(a);
+       a.sent = !1
       }
     }
    })
