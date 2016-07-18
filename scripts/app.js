@@ -244,8 +244,13 @@
  }, this.sendPasswordResetEmail = function(a, b) {
   o.sendPasswordResetEmail(a, function(a) {
    d.$apply(function() {
-    console.log(a);console.log(b);
-    a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
+    console.log(a);
+    if(a.developerMessage == "The email property value 'sulakshana146@gmail.com' does not match a known resource."){
+
+    }else{
+     a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
+
+    }
    })
   })
  }, this.setNewPassword = function(a, b, c) {
