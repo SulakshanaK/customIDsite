@@ -266,7 +266,7 @@
         console.log("400");
        //a.sent = !1, a.fields.email.setError("duplicateUser", !0)
        //a.sent = !1, a.submitting = !1 //,
-       a && (400 === a.status ? a.fields.email.setError("unknownError", !0) : a.unknownError = String(a.userMessage || a.developerMessage || a))
+       a && (400 === a.status ? a.fields.email.setError("duplicateUser", !0) : a.unknownError = String(a.userMessage || a.developerMessage || a))
        //a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
 
       }
