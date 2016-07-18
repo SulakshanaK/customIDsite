@@ -149,7 +149,12 @@
     a.sent = !0, a.submitting = !1
    })
   }
-  if (c.length > 0) {
+
+  console.log("length : "+c.length+ " "+c);
+
+  var newstr = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (c.length > 0 && !newstr.test(c)) {
    return a.notFound = !0;
   }
  }
