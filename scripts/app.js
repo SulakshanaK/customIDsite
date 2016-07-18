@@ -246,12 +246,15 @@
    d.$apply(function() {
     console.log(a);
     console.log("******************");
-    console.log(a.serviceProviderCallbackUrl);
-    console.log("******************");
 
-    if(a.developerMessage == "The email property value 'sulakshana146@gmail.com' does not match a known resource."){
+    if(a.serviceProviderCallbackUrl== undefined){
 
     }else{
+
+     console.log("-----------------");
+     console.log(a);
+     console.log(b);
+     console.log("-----------------");
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
     }
