@@ -260,7 +260,10 @@
      console.log("******************");
      console.log(b);
 
-     if(a.status == 400){}
+     if(a.status == 400){
+      a.sent = !1, a.submitting = !1, a ? a.unknownError = String(a.userMessage || a.developerMessage || b) : a.status = "success"
+
+     }
    //    a ? 400 === a.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
 
     }
