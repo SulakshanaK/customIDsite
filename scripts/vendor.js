@@ -11939,10 +11939,6 @@ if (function(a, b) {
          url: b.appHref + "/passwordResetTokens/" + b.sptoken,
          json: !0
         }, function(c, d) {
-         console.log(a);
-         console.log(b);
-         console.log(c);
-         console.log(d);
          b.saveSessionToken(), a && a(c, d)
         })
        }, d.prototype.setAccountPassword = function(a, b, c) {
