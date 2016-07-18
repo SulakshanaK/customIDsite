@@ -256,9 +256,9 @@
 
     }else{
 
-     console.log(a.status);
+     console.log(a);
      console.log("******************");
-     console.log(b.status);
+     console.log(b);
 
      if(a.status == 400){}
    //    a ? 400 === a.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
