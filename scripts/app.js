@@ -268,6 +268,9 @@
        //a.sent = !1, a.submitting = !1 //,
        a.fields.email.setError("duplicateUser", !0)
        //a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
+       console.log(a.message);
+         return a.validationError = a.message
+
 
       }
     }
