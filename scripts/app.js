@@ -252,7 +252,7 @@
     }else{
       if(a.status == 400){
        a.sent = !1,a.submitting = !1
-       a.fields.email.setError("undefined", !0)
+       //a.fields.email.setError("undefined", !0)
        a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
       }
     }
