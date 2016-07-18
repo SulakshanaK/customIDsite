@@ -165,6 +165,9 @@
   if (!(c > 0)) {
    var e = a.fields.password.value;
    a.submitting = !0, b.setNewPassword(d, e, function(b) {
+    console.log("@@@@@@@@@@@@@@@@@@@@");
+    console.log(a);
+    console.log("@@@@@@@@@@@@@@@@@@@@");
     a.submitting = !1, b ? a.unknownError = String(b.userMessage || b.developerMessage || b) : a.status = "success"
    })
   }
@@ -248,22 +251,18 @@
 
     if(a == null){
 
-     console.log("-----------------");
+    /* console.log("-----------------");
      console.log(a);
      console.log(b);
-     console.log("-----------------");
+     console.log("-----------------");*/
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
     }else{
 
-     console.log(a);
+/*     console.log(a);
      console.log("******************");
-     console.log(b);
+     console.log(b);*/
 
-     if(a.status == 400){
-      a.sent = !1, a.submitting = !1, a ? a.unknownError = String(a.userMessage || a.developerMessage || b) : a.status = "success"
-
-     }
    //    a ? 400 === a.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
 
     }
