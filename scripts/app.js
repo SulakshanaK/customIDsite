@@ -146,7 +146,6 @@
    }), b.client.jwtPayload.ash && (d.accountStore = {
     href: b.client.jwtPayload.ash
    }), a.submitting = !0, b.sendPasswordResetEmail(d, function() {
-    console.log(a);
     a.sent = !0, a.submitting = !1
    })
   }
@@ -253,20 +252,21 @@
      console.log(a);
      console.log(b);
      console.log("-----------------");*/
-     console.log(b);
-     console.log(b(a));
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
     }else{
 
 /*     console.log(a);
      console.log("******************");*/
-     console.log(b);
-     console.log(b(a));
+     console.log(a.serviceProviderCallbackUrl);
+     console.log(h(a.serviceProviderCallbackUrl));
      //a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
-   //    a ? 400 === a.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
+      if(a.status == 400){
+        console.log("400");
+       a.sent = !1, a.fields.email.setError(a.developerMessage)
 
+      }
     }
    })
   })
