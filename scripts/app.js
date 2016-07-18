@@ -251,9 +251,6 @@
 
     }else{
       if(a.status == 400){
-
-       a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
-
        a.sent = !1,a.submitting = !1
       }
     }
