@@ -155,7 +155,7 @@
  var d;
  b.init.then(function() {
   b.verifyPasswordToken(function(b, e) {
-   b ? 400 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || a.error = b.developerMessage || b) : (a.status = "verified", d = e)
+   b ? 400 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
   })
  }), a.submit = function() {
   var c = Object.keys(a.fields).filter(function(b) {
