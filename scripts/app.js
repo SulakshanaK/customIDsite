@@ -254,7 +254,10 @@
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
     }else{
+      if(a.status == 400){
+       console.log("status : "+a.status);
 
+      }
     }
    })
   })
