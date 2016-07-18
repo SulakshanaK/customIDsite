@@ -206,14 +206,14 @@
                 </div>
               </div>
 
-              <div class="form-group group-email" ng-class="{'has-error':notFound}" form-group>
+              <div class="form-group group-email" style="float:right;" ng-class="{'has-error':notFound}" form-group >
                 <label class="col-sm-6" ng-hide="retry">Send password reset instructions to:</label>
                 <label class="col-sm-6" ng-show="retry">Send new password reset email to:</label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" name="email" placeholder="Email" form-control email-validation validate-on-blur/>
                   <small class="help-block wd-invalid-email" ng-show="validationError">Invalid email address</small>
                   <small class="help-block wd-invalid-email" ng-show="undefined">Invalid email address</small>
-                  <small class="help-block wd-not-found" ng-show="notFound"><span>Account does not exist.</span></small>
+                  <small class="help-block wd-not-found" style="float:right;" ng-show="notFound"><span>Account does not exist.</span></small>
                 </div>
               </div>
               <div class="alert alert-danger" ng-show="unknownError">
