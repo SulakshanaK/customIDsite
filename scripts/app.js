@@ -146,9 +146,6 @@
    }), b.client.jwtPayload.ash && (d.accountStore = {
     href: b.client.jwtPayload.ash
    }), a.submitting = !0, b.sendPasswordResetEmail(d, function() {
-    console.log("******************");console.log(a);
-    console.log("******************");console.log(b);
-    console.log("******************");console.log(d);
     a.sent = !0, a.submitting = !1
    })
   }
@@ -257,7 +254,7 @@
 
        a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
-       //a.submitting = !1
+       a.sent = !1,a.submitting = !1
       }
     }
    })
