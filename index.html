@@ -187,7 +187,7 @@
                 <span>We've sent a password reset link to </span>
                 <strong>{{fields.email.value}}</strong>.
               </p>
-              <p>&nbsp;<button type="button" onclick="location.href='https://id.staticanalyzer.com'">Back to Log In</button></p>
+              <p>&nbsp;<button type="button" class="to-login" onclick="location.href='https://id.staticanalyzer.com'">Back to Log In</button></p>
             </div>
             <form class="forgot-form form-horizontal sp-form" role="form" ng-submit="submit()" ng-show='!sent'>
 
@@ -226,7 +226,6 @@
           </div>
         </div>
         <a ng-show="!sent" class="to-login" href="#/" wd-back-to-login>Back to Log In</a>
-        <button type="button" onclick="location.href='https://id.staticanalyzer.com'">Back to Log In</button>
       </div>
     </script>
     <script type="text/ng-template" id="views/reset.html">
