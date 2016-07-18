@@ -146,6 +146,7 @@
    }), b.client.jwtPayload.ash && (d.accountStore = {
     href: b.client.jwtPayload.ash
    }), a.submitting = !0, b.sendPasswordResetEmail(d, function() {
+    console.log(a);
     a.sent = !0, a.submitting = !1
    })
   }
@@ -172,9 +173,6 @@
 }]), angular.module("stormpathIdpApp").controller("VerifyCtrl", ["$scope", "Stormpath", function(a, b) {
  a.status = "loading", b.init.then(function() {
   b.verifyEmailToken(function(b) {
-   console.log("@@@@@@@@@@@@@@@@@@@@");
-   console.log(b);
-   console.log("@@@@@@@@@@@@@@@@@@@@");
    b ? (a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)) : a.status = "verified"
   })
  })
@@ -262,6 +260,7 @@
 /*     console.log(a);
      console.log("******************");
      console.log(b);*/
+     a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
    //    a ? 400 === a.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
 
