@@ -256,9 +256,12 @@
 
     }else{
 
-     console.log(a);
+     console.log(a.status);
      console.log("******************");
-     a ? 400 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
+     console.log(b.status);
+
+     if(a.status == 400){}
+   //    a ? 400 === a.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
 
     }
    })
