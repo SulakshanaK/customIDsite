@@ -246,17 +246,13 @@
    d.$apply(function() {
 
     if(a == null){
-
-    /* console.log("-----------------");
-     console.log(a);
-     console.log(b);
-     console.log("-----------------");*/
+     
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
     }else{
       if(a.status == 400){
        console.log(a);
-       a.sent = !1
+       a.submitting = !1
       }
     }
    })
