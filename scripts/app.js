@@ -258,6 +258,7 @@
 
      console.log(a);
      console.log("******************");
+     a ? 400 === b.status ? c.path("/forgot/retry") : (a.status = "failed", a.error = b.userMessage || b.developerMessage || b) : (a.status = "verified", d = e)
 
     }
    })
