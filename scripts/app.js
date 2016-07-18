@@ -245,8 +245,6 @@
   o.sendPasswordResetEmail(a, function(a) {
    d.$apply(function() {
 
-console.log(d);
-    console.log("*********************");
     if(a == null){
 
     /* console.log("-----------------");
@@ -256,15 +254,6 @@ console.log(d);
      a ? a.serviceProviderCallbackUrl ? h(a.serviceProviderCallbackUrl) : b(a) : b()
 
     }else{
-
-     if(a.status == 400){
-        console.log("400");
-       //a.sent = !1, a.fields.email.setError("duplicateUser", !0)
-       //a.sent = !1, a.submitting = !1 //,
-     //  a.fields.email.setError("duplicateUser", !0)
-       //a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
-
-      }
 
     }
    })
