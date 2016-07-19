@@ -259,8 +259,8 @@
       if(a.status == 400){
        //a.fields.email.setError("undefined", !0)
        //a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
-       return void f(new Error("Internet Explorer is not supported.  Please try again with a newer browser."));
-
+       //return void f(new Error("Username/Email Address Does Not Exists"));
+        document.getElementById("invalid-email").css("display","block");
        }
     }
    })
