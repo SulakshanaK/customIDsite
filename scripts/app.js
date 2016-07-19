@@ -148,14 +148,13 @@
    }), a.submitting = !0, b.sendPasswordResetEmail(d, function() {
     a.sent = !0, a.submitting = !1
    })
-   var newstr = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-   if (a.fields.email.value.length > 0 && newstr.test(a.fields.email.value) && (a.sent == !1)) {
-    return a.notFound = !0;
-   }
   }
 
+  var newstr = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+  if (a.fields.email.value.length > 0 && newstr.test(a.fields.email.value)) {
+   setTimeout(function(){ return a.notFound = !0; }, 2000);
+  }
  }
 }]), angular.module("stormpathIdpApp").controller("ResetCtrl", ["$scope", "Stormpath", "$location", function(a, b, c) {
  a.status = "loading", a.fields = {};
