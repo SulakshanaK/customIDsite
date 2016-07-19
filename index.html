@@ -207,7 +207,8 @@
               </div>
 
               <div class="form-group group-email" ng-class="{'has-error':notFound}" form-group >
-                <label class="col-sm-6" ng-hide="retry">Send password reset instructions to:</label>
+                <!--<label class="col-sm-6" ng-hide="retry">Send password reset instructions to:</label>-->
+                <label class="col-sm-6" ng-hide="retry">Enter Username or Email:</label>
                 <label class="col-sm-6" ng-show="retry">Send new password reset email to:</label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" name="email" placeholder="Email" form-control email-validation validate-on-blur/>
