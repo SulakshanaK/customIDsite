@@ -260,7 +260,7 @@
        //a.fields.email.setError("undefined", !0)
        //a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
        //return void f(new Error("Username/Email Address Does Not Exists"));
-        document.getElementById("invalid-email").style.display = "none";
+        document.getElementById("alert-danger").removeClass("ng-hide");
        }
     }
    })
