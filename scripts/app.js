@@ -153,7 +153,7 @@
   var newstr = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   if (a.fields.email.value.length > 0 && newstr.test(a.fields.email.value)) {
-   setTimeout(function(){ return a.notFound = !0; }, 1000);
+   // return a.notFound = !0;
   }
  }
 }]), angular.module("stormpathIdpApp").controller("ResetCtrl", ["$scope", "Stormpath", "$location", function(a, b, c) {
@@ -257,10 +257,11 @@
 
     }else{
       if(a.status == 400){
-       a.sent = !1,a.submitting = !1
        //a.fields.email.setError("undefined", !0)
-       a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
-      }
+       //a.status = "failed", a.error = String(b.userMessage || b.developerMessage || b.message || b)
+       return void f(new Error("Internet Explorer " + n[1] + " is not supported.  Please try again with a newer browser."))
+
+       }
     }
    })
   })
