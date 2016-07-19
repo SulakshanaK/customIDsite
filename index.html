@@ -212,13 +212,14 @@
                 <label class="col-sm-6" ng-show="retry">Send new password reset email to:</label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" name="email" placeholder="Email" form-control email-validation validate-on-blur/>
-                  <small class="help-block wd-invalid-email" id="validationError" ng-show="validationError">Invalid email address</small>
+                  <small class="help-block invalid-email" id="invalid-email" style="display:none;">Invalid email address</small>
+                  <small class="help-block wd-invalid-email" ng-show="validationError">Invalid email address</small>
                   <small class="help-block wd-invalid-email" ng-show="undefined">Invalid email address</small>
                   <small class="help-block wd-not-found" ng-show="notFound"><span>Account does not exist.</span></small>
                 </div>
               </div>
-              <div class="alert alert-danger" id="alert-danger" ng-show="unknownError">
-                <strong>Sorry, an error occured.  Please check the Email Address</strong>
+              <div class="alert alert-danger" ng-show="unknownError">
+                <strong>Sorry, an error occured.  Please reload the page and try again.</strong>
                 <br/>
                 <br/>
                 <p>{{unknownError}}</p>
