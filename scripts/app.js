@@ -4,7 +4,7 @@
  License: Apache 2.0
  */
 "use strict";
-! function() {
+(function() {
  angular.module("stormpathIdpApp", ["ngRoute"]).config(["$routeProvider", function(a) {
   a.when("/", {
    templateUrl: "views/login.html",
@@ -28,7 +28,7 @@
    redirectTo: "/"
   })
  }])
-}(window), angular.module("stormpathIdpApp").controller("LoginCtrl", ["$scope", "Stormpath", "$window", function(a, b, c) {
+})(window), angular.module("stormpathIdpApp").controller("LoginCtrl", ["$scope", "Stormpath", "$window", function(a, b, c) {
  function d() {
   c.fbAsyncInit = function() {
    var a = c.FB;
